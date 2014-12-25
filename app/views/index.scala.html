@@ -1,7 +1,32 @@
-@(message: String)
+@(message: String) 
 
-@main("Welcome to Play") {
+@scripts = {
+  <link rel="stylesheet" href="@routes.Assets.at("stylesheets/index.css")">
+}
 
-    @play20.welcome(message, style = "Java")
+@Main(message) {
+
+<div class="section-1">
+  <h1>Welcome to Frames!</h1>
+</div>
+
+<div class="section-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="well">
+          <h1>Frame Data</h1>
+          <p>Precise frame data information of a character's moveset.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="well">
+          <h1>Punish</h1>
+          <p>Discover what/how moves are punished.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 }
